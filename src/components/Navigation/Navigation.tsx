@@ -1,12 +1,12 @@
-import TechnologyTab from "./TechnologyTab";
+import TechnologyTab, { techProps } from "./TechnologyTab";
 
-const technologies = ["1"];
+const technologies = [{ name: "HTML" }, { name: "CSS" }, { name: "JS" }];
 
-function Navigation() {
+function Navigation(): JSX.Element {
   return (
     <div className="navigation">
-      {technologies.map(() => (
-        <TechnologyTab />
+      {technologies.map((tech: techProps, i) => (
+        <TechnologyTab key={i} name={tech.name} />
       ))}
     </div>
   );
