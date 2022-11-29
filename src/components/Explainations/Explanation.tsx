@@ -1,7 +1,9 @@
+import "./Explanation.css";
+
 function Explanation() {
   return (
-    <div className="App">
-      <h1>TITULO</h1>
+    <div className="explanation">
+      <h1>EXPLICACION</h1>
       <p>DESCRIPCION</p>
     </div>
   );
